@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arco-íris</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        #output {
+            margin-top: 50px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arco-íris</h1>
+    <button id="red" onclick="changeColor('red')">Vermelho</button>
+    <button id="orange" onclick="changeColor('orange')">Laranja</button>
+    <button id="yellow" onclick="changeColor('yellow')">Amarelo</button>
+    <button id="green" onclick="changeColor('green')">Verde</button>
+    <button id="blue" onclick="changeColor('blue')">Azul</button>
+    <button id="indigo" onclick="changeColor('indigo')">Anil</button>
+    <button id="violet" onclick="changeColor('violet')">Violeta</button>
+    <div id="output"></div>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+            document.getElementById('output').textContent = "Cor selecionada: " + color;
+        }
+    </script>
+</body>
+</html>
